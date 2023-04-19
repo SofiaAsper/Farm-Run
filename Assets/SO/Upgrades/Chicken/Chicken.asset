@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3035d88f1211c7b4fbda54734f6a46ff, type: 3}
+  m_Name: Chicken
+  m_EditorClassIdentifier: 
+  title: Better Eggs
+  description: Bigger and more valuable
+  cost: 8
+  paymentType: 0
+  upgardedValue: 0
+  AnimalForUpgrade: {fileID: 1813571009131466, guid: 56381cfa46e44335a689e99f2cf49b4c,
+    type: 3}
+  buildingsList: []
+  image: {fileID: 21300000, guid: b9f3959dbdeb97842a88d89049196c63, type: 3}
+  increasePercentage: 0.2
+  maxUpgrade: 80
+  progress: 0
+  orderNumber: 0

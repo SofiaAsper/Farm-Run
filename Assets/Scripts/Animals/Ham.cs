@@ -1,0 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class Ham : MonoBehaviour
+{
+    public float hamNum;
+    private TMP_Text hamText;
+
+
+    // Start is called before the first frame update
+    void Awake()
+    {
+        hamText = gameObject.GetComponent<TMP_Text>();
+        hamText.text = "0"; 
+    }
+
+
+    public void UpdateHamNum(float num){
+        hamNum += num;
+        hamText.text = NumShortCut();
+    }
+    public string NumShortCut()
+    {
+
+        // if the number is over 1K then shorten it to num K , if over 1M then shorten it to num M and so on with switch case   
+        switch (hamNum)
+        {
+            case float n when n >= 1000 && n < 1000000:
+                return (hamNum / 1000).ToString("F1") + "K";
+            case float n when n >= 1000000 && n < 1000000000:
+                return (hamNum / 1000000).ToString("F1") + "M";
+            case float n when n >= 1000000000 && n < 1000000000000:
+                return (hamNum / 1000000000).ToString("F1") + "B";
+            case float n when n >= 1000000000000 && n < 1000000000000000:
+                return (hamNum / 1000000000000).ToString("F1") + "T";
+            case float n when n >= 1000000000000000:
+                return (hamNum / 1000000000000000).ToString("F1") + "Q";
+            default:            
+                return hamNum.ToString("F1");     
+        }
+
+    }
+
+}
+

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3035d88f1211c7b4fbda54734f6a46ff, type: 3}
+  m_Name: Chicken 4
+  m_EditorClassIdentifier: 
+  title: Chill and feel
+  description: relaxation good for our body
+  cost: 15
+  paymentType: 0
+  upgardedValue: 0
+  AnimalForUpgrade: {fileID: 1813571009131466, guid: 56381cfa46e44335a689e99f2cf49b4c,
+    type: 3}
+  buildingsList: []
+  image: {fileID: 21300000, guid: 05710024d9a70f9458568db9699160f5, type: 3}
+  increasePercentage: 0.3
+  maxUpgrade: 80
+  progress: 0
+  orderNumber: 0
